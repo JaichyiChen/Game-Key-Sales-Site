@@ -1,6 +1,7 @@
 //Hidden search bar
 const panels = document.querySelectorAll(".panel");
 const search = document.querySelector(".search");
+const btn = document.querySelector(".btn");
 
 //Shopping cart
 const carts = document.querySelectorAll(".add-cart");
