@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  background-color: rgba(238, 238, 238);
+}
+/* nav bar */
+.nav ul {
+  display: flex;
+  justify-content: right;
+  background-color: white;
+  overflow: hidden;
+  width: 100vw;
+}
+.nav ul img {
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+.nav li {
+  list-style: none;
+  position: relative;
+  padding: 30px 50px 30px 50px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.nav li a {
+  font-size: 1.3em;
+  font-family: "Muli", sans-serif;
+  background-color: rgba(238, 238, 238, 0.6);
+  color: gray;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  text-decoration: none;
+}
+.nav li #cart-icon {
+  margin-top: 2px;
+  padding-right: 5px;
+}
+.nav li a:hover {
+  color: orange;
+  transition: ease-in 0.3s;
+}
+/* nav bar */
+
+/* search bar */
+.search {
+  position: relative;
+  height: 50px;
+}
+
+.search .input {
+  background-color: #fff;
+  border: 0;
+  font-size: 30px;
+  padding: 15px;
+  height: 50px;
+  width: 50px;
+  transition: width 0.3s ease;
+  margin-top: 30px;
+}
+
+.btn {
+  background-color: #fff;
+  color: gray;
+  border: 0;
+  cursor: pointer;
+  font-size: 34px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  transition: transform 0.3s ease;
+  margin-top: 30px;
+}
+.btn:focus,
+.input:focus {
+  outline: none;
+}
+.btn:hover {
+  color: orange;
+  transition: ease 0.3s;
+}
+.search.search-active .input {
+  width: 200px;
+}
+
+.search.search-active .btn {
+  transform: translateX(198px);
+  margin-top: 30px;
+}
+/* search bar */
+
+/* expanding card */
+.expand {
+  margin-top: 50px;
+}
+.expand-title {
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(94, 94, 94, 0.856);
+  margin-left: 160px;
+}
+.expanding-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90vw;
+  overflow: hidden;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: all 700ms ease-in;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+/* expanding card */
+
+/* container for games */
+.game-title {
+  padding-top: 50px;
+  text-align: center;
+  color: rgba(94, 94, 94, 0.856);
+}
+.flex-container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  justify-content: space-between;
+}
+.flex-item {
+  background-color: white;
+  margin: 100px 30px 100px;
+  width: 160px;
+  height: 250px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+.flex-item p {
+  padding-top: 20px;
+  font-size: 0.5em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.flex-item img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 50%;
+}
+.flex-item button {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 0.4em;
+}
+.flex-item button:hover {
+  background-color: orange;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+.flex-item:hover {
+  transform: translateY(-5%);
+  transition: ease-in 0.2s;
+  box-shadow: 5px 10px 18px #888888;
+}
+.flex-item .original {
+  text-decoration: line-through;
+  color: #888888;
+}
+.flex-item .game-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  padding-bottom: 12px;
+  background-color: orange;
+  margin-top: 20px;
+  border-radius: 0px 0px 20px 20px;
+  color: white;
+}
+/* container for games */
+
+/* bottom contact divs */
+.contact-div {
+  margin-top: 20%;
+  padding-top: 30px;
+  width: 100%;
+  height: 200px;
+  background-color: orange;
+}
+.contact-div1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 1em;
+}
+.contact-div2 p {
+  padding: 10px;
+}
+.contact-div2 p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.contact-div3 {
+  display: flex;
+}
+/* bottom contact divs */

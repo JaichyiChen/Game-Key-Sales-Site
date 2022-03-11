@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+  background-color: rgba(238, 238, 238);
+}
+
+.nav ul {
+  display: flex;
+  justify-content: left;
+  background-color: white;
+  overflow: hidden;
+  width: 100vw;
+  height: 109px;
+}
+.nav img {
+  height: 100px;
+  width: 100px;
+  margin-left: -20px;
+}
+.faq-heading {
+  border-bottom: #777;
+  padding: 20px 60px;
+}
+.faq-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hr-line {
+  width: 60%;
+  margin: auto;
+}
+.faq-page {
+  color: #444;
+  cursor: pointer;
+  padding: 30px 20px;
+  width: 60%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+}
+.faq-body {
+  margin: auto;
+  width: 50%;
+  padding: auto;
+}
+.active,
+.faq-page:hover {
+  transition: ease-in 0.3s;
+  background-color: orange;
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+  padding: 0 18px;
+  background-color: rgba(238, 238, 238);
+  display: none;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.faq-page:after {
+  content: "\02795";
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2796";
+}
+/*Form*/
+.form-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 160px;
+}
+.form-title {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.form-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.textarea {
+  background-color: #dddddd;
+  color: #666666;
+  padding: 1em;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  outline: none;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  width: 200px;
+  height: 100px;
+  transition: all 0.2s;
+}
+
+.textarea:hover {
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+
+.textarea:focus {
+  cursor: text;
+  color: #333333;
+  background-color: white;
+  border-color: #333333;
+}
+
+.form-container button {
+  width: 76px;
+  height: 25px;
+  background-color: lightgray;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+.form-container button:hover {
+  background-color: orange;
+  transition: ease-in 0.2s;
+}
