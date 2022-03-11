@@ -1,5 +1,4 @@
 //login
-const btn = document.querySelector(".btn");
 const input = document.querySelector(".input");
 const labels = document.querySelectorAll(".form-control label");
 labels.forEach((label) => {
