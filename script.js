@@ -1,5 +1,7 @@
-//Hidden search bar
+//Expanding cards
 const panels = document.querySelectorAll(".panel");
+//Hidden search bar
+const input = document.querySelector(".input");
 const search = document.querySelector(".search");
 const btn = document.querySelector(".btn");
 
